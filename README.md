@@ -70,7 +70,7 @@ In a live production environment with Webpack Module Federation or `@originjs/vi
 | Layer | Technology |
 |---|---|
 | **Framework** | React 19 + TypeScript (Strict Mode) |
-| **Build System** | Vite 6 (Netlify Compatible) |
+| **Build System** | Vite 6 (vercel Compatible) |
 | **Routing** | React Router v6 |
 | **State Management** | Redux Toolkit (`combineReducers` slice isolation) |
 | **UI Components** | Material UI (MUI v6) |
@@ -122,7 +122,7 @@ google/
 │       └── audit/                 # Module 4 Boundary
 │           └── AuditModule.tsx
 ├── jest.config.ts                 # Jest Test Runner Configuration
-├── netlify.toml                   # Netlify Static Deployment Spec
+├── vercel..json                   # vercel Static Deployment Spec
 └── vite.config.ts                 # Chunk Splitting & Path Aliases
 ```
 
@@ -164,13 +164,12 @@ Open [http://localhost:3000](http://localhost:3000) in your browser. MSW will in
 ```bash
 npm run build
 ```
-Generates a static SPA distribution in `/dist` ready for Netlify.
 
----
+## ☁️ Vercel Deployment
 
-## ☁️ Netlify Deployment
-
-This project is pre-configured for static deployment on **Netlify**:
+This project is deployed on **Vercel**:
 - Build command: `npm run build`
-- Publish directory: `dist`
-- SPA redirects pre-configured in `netlify.toml`
+- Output directory: `dist`
+- SPA rewrites configured in `vercel.json`
+
+**Live demo:** [modular-react-admin-console-develop.vercel.app](https://modular-react-admin-console-develop.vercel.app/)
