@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import {
   Box, Typography, TextField, Button, Avatar, MenuItem, Paper, Alert, Snackbar,
 } from '@mui/material';
-import { Save, UploadCloud } from '@mui/icons-material';
+import { Save } from '@mui/icons-material';
 import { useForm, Controller } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
 import { z } from 'zod';

@@ -171,7 +171,7 @@ export function NotificationPrefs() {
       <Dialog
         open={confirmReset}
         onClose={() => setConfirmReset(false)}
-        PaperProps={{ sx: { background: '#1a1a2e', border: '1px solid #2a2a4a' } }}
+        slotProps={{ paper: { sx: { background: '#1a1a2e', border: '1px solid #2a2a4a' } } }}
       >
         <DialogTitle sx={{ color: '#f1f5f9', display: 'flex', alignItems: 'center', gap: 1 }}>
           <Warning sx={{ color: '#ef4444' }} /> Confirm Settings Reset

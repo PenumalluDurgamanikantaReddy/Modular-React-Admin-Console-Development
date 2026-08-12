@@ -51,19 +51,19 @@ export default function SettingsModule() {
       {/* Tab Panels */}
       <Grid container spacing={3}>
         {activeTab === 0 && (
-          <Grid item xs={12} md={8}>
+          <Grid size={{ xs: 12, md: 8 }}>
             <ProfileForm />
           </Grid>
         )}
 
         {activeTab === 1 && (
-          <Grid item xs={12} md={8}>
+          <Grid size={{ xs: 12, md: 8 }}>
             <ThemeToggle />
           </Grid>
         )}
 
         {activeTab === 2 && (
-          <Grid item xs={12} md={8}>
+          <Grid size={{ xs: 12, md: 8 }}>
             <NotificationPrefs />
           </Grid>
         )}

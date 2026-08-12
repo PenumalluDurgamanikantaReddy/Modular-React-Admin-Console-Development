@@ -104,11 +104,13 @@ export default function Topbar() {
         onClose={() => setAnchorNotif(null)}
         transformOrigin={{ horizontal: 'right', vertical: 'top' }}
         anchorOrigin={{ horizontal: 'right', vertical: 'bottom' }}
-        PaperProps={{
-          sx: {
-            width: 340, maxHeight: 480, mt: 1,
-            background: '#1a1a2e', border: '1px solid #2a2a4a', borderRadius: 2,
-          },
+        slotProps={{
+          paper: {
+            sx: {
+              width: 340, maxHeight: 480, mt: 1,
+              background: '#1a1a2e', border: '1px solid #2a2a4a', borderRadius: 2,
+            },
+          }
         }}
       >
         <Box sx={{ px: 2, py: 1.5, display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
@@ -173,11 +175,13 @@ export default function Topbar() {
         onClose={() => setAnchorUser(null)}
         transformOrigin={{ horizontal: 'right', vertical: 'top' }}
         anchorOrigin={{ horizontal: 'right', vertical: 'bottom' }}
-        PaperProps={{
-          sx: {
-            width: 220, mt: 1,
-            background: '#1a1a2e', border: '1px solid #2a2a4a', borderRadius: 2,
-          },
+        slotProps={{
+          paper: {
+            sx: {
+              width: 220, mt: 1,
+              background: '#1a1a2e', border: '1px solid #2a2a4a', borderRadius: 2,
+            },
+          }
         }}
       >
         <Box sx={{ px: 2, py: 1.5 }}>

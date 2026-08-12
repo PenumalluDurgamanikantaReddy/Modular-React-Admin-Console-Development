@@ -123,7 +123,7 @@ export default function AnalyticsModule() {
       {data?.metrics && (
         <Grid container spacing={2.5} sx={{ mb: 3 }}>
           {data.metrics.map(metric => (
-            <Grid item xs={12} sm={6} md={4} lg={2} key={metric.id}>
+            <Grid size={{ xs: 12, sm: 6, md: 4, lg: 2 }} key={metric.id}>
               <MetricCardWidget metric={metric} />
             </Grid>
           ))}
@@ -133,13 +133,13 @@ export default function AnalyticsModule() {
       {/* Charts Grid */}
       {data && (
         <Grid container spacing={3}>
-          <Grid item xs={12} lg={8}>
+          <Grid size={{ xs: 12, lg: 8 }}>
             <LineChartWidget data={data.dailyActiveUsers} />
           </Grid>
-          <Grid item xs={12} lg={4}>
+          <Grid size={{ xs: 12, lg: 4 }}>
             <PieChartWidget data={data.roleDistribution} />
           </Grid>
-          <Grid item xs={12}>
+          <Grid size={{ xs: 12 }}>
             <BarChartWidget data={data.moduleUsageByDept} />
           </Grid>
         </Grid>
