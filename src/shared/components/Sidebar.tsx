@@ -31,7 +31,8 @@ export default function Sidebar() {
       animate={{ width: collapsed ? 72 : 260 }}
       transition={{ duration: 0.25, ease: 'easeInOut' }}
     >
-      {/* Logo */}
+
+      
       <Box sx={{ display: 'flex', alignItems: 'center', gap: 1.5, px: 2, py: 2.5, borderBottom: '1px solid #2a2a4a' }}>
         <Box sx={{
           flexShrink: 0, width: 36, height: 36, borderRadius: '12px', display: 'flex', alignItems: 'center', justifyContent: 'center',
