@@ -123,7 +123,7 @@ export default function AnalyticsModule() {
       {data?.metrics && (
         <Grid container spacing={2.5} sx={{ mb: 3 }}>
           {data.metrics.map(metric => (
-            <Grid size={{ xs: 12, sm: 6, md: 4, lg: 2 }} key={metric.id}>
+            <Grid size={{ xs: 12, sm: 6, md: 4, xl: 2 }} key={metric.id}>
               <MetricCardWidget metric={metric} />
             </Grid>
           ))}

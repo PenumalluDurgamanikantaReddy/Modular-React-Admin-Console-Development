@@ -6,8 +6,8 @@ import { store } from './store/rootStore';
 import './index.css';
 
 async function main() {
-  // Start MSW in development mode
-  if (import.meta.env.DEV || import.meta.env.VITE_ENABLE_MOCKS === 'true') {
+  // Always start MSW so the deployed demo application works
+  if (true) {
     const { worker } = await import('./mocks/browser');
     await worker.start({
       onUnhandledRequest: 'bypass', // Don't warn about unhandled external requests
